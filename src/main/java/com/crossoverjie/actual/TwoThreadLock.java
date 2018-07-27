@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *         Date: 11/02/2018 10:04
  * @since JDK 1.8
  */
-public class TwoThread {
+public class TwoThreadLock {
 
     private int start = 1;
 
@@ -28,7 +28,7 @@ public class TwoThread {
     private final static Lock LOCK = new ReentrantLock();
 
     public static void main(String[] args) {
-        TwoThread twoThread = new TwoThread();
+        TwoThreadLock twoThread = new TwoThreadLock();
 
         Thread t1 = new Thread(new OuNum(twoThread));
         t1.setName("t1");
@@ -46,9 +46,9 @@ public class TwoThread {
      */
     public static class OuNum implements Runnable {
 
-        private TwoThread number;
+        private TwoThreadLock number;
 
-        public OuNum(TwoThread number) {
+        public OuNum(TwoThreadLock number) {
             this.number = number;
         }
 
@@ -84,9 +84,9 @@ public class TwoThread {
      */
     public static class JiNum implements Runnable {
 
-        private TwoThread number;
+        private TwoThreadLock number;
 
-        public JiNum(TwoThread number) {
+        public JiNum(TwoThreadLock number) {
             this.number = number;
         }
 
