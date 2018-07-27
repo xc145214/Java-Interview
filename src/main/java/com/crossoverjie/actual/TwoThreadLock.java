@@ -27,7 +27,7 @@ public class TwoThreadLock {
      */
     private final static Lock LOCK = new ReentrantLock();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         TwoThreadLock twoThread = new TwoThreadLock();
 
         Thread t1 = new Thread(new OuNum(twoThread));
@@ -39,6 +39,11 @@ public class TwoThreadLock {
 
         t1.start();
         t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println("exit!");
     }
 
     /**
