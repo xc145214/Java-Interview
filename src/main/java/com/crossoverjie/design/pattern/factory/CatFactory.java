@@ -1,4 +1,4 @@
-package com.crossoverjie.design.pattern.factorymethod;
+package com.crossoverjie.design.pattern.factory;
 
 /**
  * Function:
