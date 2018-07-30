@@ -9,9 +9,10 @@ Java 知识点，继续完善中。
 [TOC]
 
 ### 常用集合
-- [ArrayList/Vector](./MD/ArrayList.md)
-- [LinkedList](./MD/LinkedList.md)
-- [HashMap](./MD/HashMap.md)
+- [集合](./MD/)
+- [ArrayList/Vector](MD/collection/ArrayList.md)
+- [LinkedList](MD/collection/LinkedList.md)
+- [HashMap](MD/collection/HashMap.md)
 - [HashSet](./MD/collection/HashSet.md)
 - [LinkedHashMap](./MD/collection/LinkedHashMap.md)
 
