@@ -42,6 +42,9 @@ Java 知识点，继续完善中。
 - [分布式缓存设计](./MD/Cache-design.md)
 - [分布式 ID 生成器](./MD/ID-generator.md)
 
+### 常用设计模式
+- [设计模式](./MD/design-pattern/design.md)
+- [策略模式](./MD/design-pattern/streay.md)
 ### 常用框架\第三方组件
 
 - [Spring Bean 生命周期](./MD/spring/spring-bean-lifecycle.md)
@@ -85,9 +88,3 @@ Java 知识点，继续完善中。
 - [TCP/IP 协议](./MD/TCP-IP.md)
 - [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
 
-
-### 联系作者
-
-> crossoverJie#gmail.com
-
-![](https://ws2.sinaimg.cn/large/006tKfTcly1fsa01u7ro1j30gs0howfq.jpg)
