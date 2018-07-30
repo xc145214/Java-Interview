@@ -35,5 +35,11 @@ public class ArrayListTest {
         while (ite.hasNext()) {
             System.out.println(ite.next());
         }
+
+        /**
+         * 使用lambda表达式
+         */
+        list.forEach(str -> System.out.println(str));
+
     }
 }

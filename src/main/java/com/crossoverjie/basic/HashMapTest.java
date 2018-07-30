@@ -60,8 +60,8 @@ public class HashMapTest {
          * 使用lambda表达式。
          */
         System.out.println("=======使用lambda表达式=======");
-        map.forEach((key, value) -> {
-            System.out.println("key=" + key + " value=" + map.get(key));
-        });
+        map.forEach((key, value) ->
+                System.out.println("key=" + key + " value=" + map.get(key))
+        );
     }
 }
