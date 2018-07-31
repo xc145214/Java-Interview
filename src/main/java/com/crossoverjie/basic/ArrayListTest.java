@@ -41,5 +41,16 @@ public class ArrayListTest {
          */
         list.forEach(str -> System.out.println(str));
 
+
+        System.out.println("-------------");
+        String str = list.remove(0);
+        System.out.println(str);
+
+        println(list);
+
+    }
+
+    public static void println(List list) {
+        list.forEach(str -> System.out.println(str));
     }
 }
