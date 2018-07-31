@@ -44,6 +44,7 @@ Java 知识点，继续完善中。
 
 ### 常用设计模式
 - [设计模式](./MD/design-pattern/design.md)
+- [工厂模式](./MD/design-pattern/factory.md)
 - [策略模式](./MD/design-pattern/streay.md)
 ### 常用框架\第三方组件
 
