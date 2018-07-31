@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author: xiac
  * @date: 2018/7/31
- * @func: 游乐厂排队。
+ * @func: 游乐场排队 非线程安全。
  */
 public class PlayQueue {
 
@@ -78,7 +78,7 @@ public class PlayQueue {
             //一个未取到直接返回
             person = this.take();
             if (person == null) {
-                return list ;
+                return list;
             }
             list.add(person);
         }
