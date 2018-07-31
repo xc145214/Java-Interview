@@ -1,18 +1,15 @@
 package com.crossoverjie.basic;
 
-import org.springframework.boot.lang.UsesUnsafeJava;
-
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
  * @author: xiac
  * @date: 2018/7/31
- * @func: 游乐场排队 非线程安全  FIFO。
+ * @desc: 使用LinkedList
  */
-@UsesUnsafeJava
-public class PlayQueue {
-
+public class PlayQueueWithLinkedList {
     /**
      * 项目一次几人玩。
      */
@@ -23,21 +20,21 @@ public class PlayQueue {
     /**
      * 普通队列
      */
-    public List<Person> queue;
+    public LinkedList<Person> queue;
 
     /**
      * VIP队列
      */
-    public List<Person> vipQueue;
+    public LinkedList<Person> vipQueue;
 
 
-    public PlayQueue(int batch) {
+    public PlayQueueWithLinkedList(int batch) {
         if (batch < 1) {
             throw new IllegalArgumentException("初始化参数错误batch不能小于1");
         }
         this.batch = batch;
-        queue = new ArrayList<Person>();
-        vipQueue = new ArrayList<Person>();
+        queue = new LinkedList<>();
+        vipQueue = new LinkedList<Person>();
     }
 
     /**
@@ -66,10 +63,10 @@ public class PlayQueue {
      */
     public Person take() {
         if (vipQueue.size() > 0) {
-            return vipQueue.remove(0);
+            return vipQueue.removeFirst();
         }
         if (queue.size() > 0) {
-            return queue.remove(0);
+            return queue.removeFirst();
         }
         return null;
     }

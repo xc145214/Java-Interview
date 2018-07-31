@@ -1,10 +1,10 @@
 package com.crossoverjie.basic;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -14,23 +14,23 @@ import static org.junit.Assert.*;
  * @date: 2018/7/31
  * @desc: 一句话描述
  */
-public class PlayQueueTest {
+public class PlayQueueWithLinkedListTest {
 
     PlayQueue playQueue;
-    List<Person> normalList;
-    List<Person> vipList;
+    LinkedList<Person> normalList;
+    LinkedList<Person> vipList;
 
     @Before
     public void setUp() throws Exception {
 
-        normalList = new ArrayList<Person>();
+        normalList = new LinkedList<Person>();
         normalList.add(new Person("A", 40));
         normalList.add(new Person("B", 40));
         normalList.add(new Person("C", 40));
         normalList.add(new Person("D", 40));
         normalList.add(new Person("E", 40));
 
-        vipList = new ArrayList<>();
+        vipList = new LinkedList<>();
         vipList.add(new Person("vipA", 400));
         vipList.add(new Person("vipB", 400));
         vipList.add(new Person("vipC", 400));
@@ -45,7 +45,7 @@ public class PlayQueueTest {
         for (Person person : normalList) {
             playQueue.put(person);
         }
-       assertEquals(playQueue.queue.size(), normalList.size());
+        assertEquals(playQueue.queue.size(), normalList.size());
     }
 
     @Test
@@ -53,7 +53,7 @@ public class PlayQueueTest {
         for (Person person : vipList) {
             playQueue.putVip(person);
         }
-       assertEquals(playQueue.vipQueue.size(), vipList.size());
+        assertEquals(playQueue.vipQueue.size(), vipList.size());
     }
 
     @Test
@@ -115,4 +115,5 @@ public class PlayQueueTest {
 
 
     }
+
 }
