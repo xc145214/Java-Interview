@@ -1,6 +1,5 @@
 package com.crossoverjie.basic;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,9 +13,9 @@ import static org.junit.Assert.*;
  * @date: 2018/7/31
  * @desc: 一句话描述
  */
-public class PlayQueueTest {
+public class PlayQueueWithArrayListTest {
 
-    PlayQueue playQueue;
+    PlayQueueWithArrayList playQueue;
     List<Person> normalList;
     List<Person> vipList;
 
@@ -37,7 +36,7 @@ public class PlayQueueTest {
         vipList.add(new Person("vipD", 400));
         vipList.add(new Person("vipE", 400));
 
-        playQueue = new PlayQueue(4);
+        playQueue = new PlayQueueWithArrayList(4);
     }
 
     @Test

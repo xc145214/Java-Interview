@@ -3,7 +3,6 @@ package com.crossoverjie.basic;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,9 +13,9 @@ import static org.junit.Assert.*;
  * @date: 2018/7/31
  * @desc: 一句话描述
  */
-public class PlayQueueWithLinkedListTest {
+public class PlayQueueWithVectorTest {
 
-    PlayQueueWithLinkedList playQueue;
+    PlayQueueWithVector playQueue;
     LinkedList<Person> normalList;
     LinkedList<Person> vipList;
 
@@ -37,7 +36,12 @@ public class PlayQueueWithLinkedListTest {
         vipList.add(new Person("vipD", 400));
         vipList.add(new Person("vipE", 400));
 
-        playQueue = new PlayQueueWithLinkedList(4);
+        playQueue = new PlayQueueWithVector(4);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void contructor() {
+        PlayQueueWithVector queue = new PlayQueueWithVector(-1);
     }
 
     @Test
@@ -115,5 +119,4 @@ public class PlayQueueWithLinkedListTest {
 
 
     }
-
 }

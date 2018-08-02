@@ -11,7 +11,7 @@ import java.util.List;
  * @func: 游乐场排队 非线程安全  FIFO。
  */
 @UsesUnsafeJava
-public class PlayQueue {
+public class PlayQueueWithArrayList {
 
     /**
      * 项目一次几人玩。
@@ -31,7 +31,7 @@ public class PlayQueue {
     public List<Person> vipQueue;
 
 
-    public PlayQueue(int batch) {
+    public PlayQueueWithArrayList(int batch) {
         if (batch < 1) {
             throw new IllegalArgumentException("初始化参数错误batch不能小于1");
         }
