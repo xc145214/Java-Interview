@@ -18,7 +18,8 @@ Java 知识点，继续完善中。
 
 ### Java 多线程
 - [多线程中的常见问题](./MD/Thread-common-problem.md)
-- [synchronize 关键字原理](./MD/Synchronize.md)
+- [synchronize 关键字原理](MD/concurrent/Synchronize.md)
+- [锁优化](MD/concurrent/lock_opt.md)
 - [多线程的三大核心](./MD/Threadcore.md)
 - [对锁的一些认知](./MD/Java-lock.md)
 - [ReentrantLock 实现原理 ](./MD/ReentrantLock.md)
