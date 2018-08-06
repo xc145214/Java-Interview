@@ -9,7 +9,7 @@ Java 知识点，继续完善中。
 [TOC]
 
 ### 常用集合
-- [集合](./MD/)
+- [集合](./MD/collection/collection.md)
 - [ArrayList/Vector](MD/collection/ArrayList.md)
 - [LinkedList](MD/collection/LinkedList.md)
 - [HashMap](MD/collection/HashMap.md)
@@ -46,7 +46,9 @@ Java 知识点，继续完善中。
 ### 常用设计模式
 - [设计模式](./MD/design-pattern/design.md)
 - [工厂模式](./MD/design-pattern/factory.md)
+- [观察者模式](./MD/design-pattern/observe.md)
 - [策略模式](./MD/design-pattern/streay.md)
+
 ### 常用框架\第三方组件
 
 - [Spring Bean 生命周期](./MD/spring/spring-bean-lifecycle.md)
