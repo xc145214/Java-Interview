@@ -37,3 +37,6 @@
 5. 有多个观察者时，不可以依赖特定的通知次序。
 6. 使用观察者模式，可以从被观察者处推或者拉数据。
 
+## 样例
+
+[demo](../../src/main/java/com/crossoverjie/design/pattern/observe)
